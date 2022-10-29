@@ -8,4 +8,5 @@ test_task:
     - apt update
     - apt -y install git
     - pip install -e .[testing]
+    - pip install pytest
   test_script: pytest
