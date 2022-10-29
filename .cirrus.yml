@@ -13,6 +13,16 @@ task:
       matrix:
       - image: node:latest
       - image: node:lts
+      - image: node:19-alpine
+      - image: node:19-bullseye
+      - image: node:19-slim
+      - image: node:19-buster
+      - image: node:19-current
+      - image: node:18-alpine
+      - image: node:18-bullseye
+      - image: node:18-slim
+      - image: node:18-buster
+      - image: node:18-current
     test_script: yarn run test
   - name: Publish
     depends_on:
