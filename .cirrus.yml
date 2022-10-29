@@ -2,3 +2,7 @@ task:
   container:
     image: node:latest
   test_script: yarn run test
+  node_modules_cache:
+    folder: node_modules
+    fingerprint_script: cat yarn.lock
+    populate_script: yarn install
