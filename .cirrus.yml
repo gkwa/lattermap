@@ -1,6 +1,6 @@
 task:
   container:
-    image: node:latest
+    dockerfile: Dockerfile
   node_modules_cache:
     folder: node_modules
     fingerprint_script: cat yarn.lock
