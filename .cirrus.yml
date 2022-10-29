@@ -10,7 +10,7 @@ task:
 
   matrix: # 
     - name: Lint
-      skip: !changesInclude('.cirrus.yml', '**.{js,ts}') # 
+#      skip: !changesInclude('.cirrus.yml', '**.{js,ts}') # 
       lint_script: yarn run lint
     - name: Test
       container:
