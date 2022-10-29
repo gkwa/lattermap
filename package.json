@@ -1,0 +1,11 @@
+{
+  "name": "lattermap",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:TaylorMonacelli/lattermap",
+  "author": "Taylor Monacelli <taylormonacelli@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "vite": "^3.2.1"
+  }
+}
