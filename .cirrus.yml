@@ -1,12 +1,11 @@
 container:
   image: python:slim
 
-setup_script:
-- apt update
-- apt -y install git
-
 test_task:
   pip_cache:
     folder: ~/.cache/pip
-    populate_script: pip install -e .[testing]
+    populate_script:
+    - apt update
+    - apt -y install git
+    - pip install -e .[testing]
   test_script: pytest
