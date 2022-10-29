@@ -1,6 +1,10 @@
 container:
   image: python:slim
 
+setup_script:
+- apt update
+- apt -y install git
+
 test_task:
   pip_cache:
     folder: ~/.cache/pip
